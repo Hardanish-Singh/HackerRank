@@ -25,7 +25,13 @@
 *       2a) The first line contains n, the number of elements   *
 *           in the array arr.                                   *
 *       2b) The second line contains n space-separated integers *
-*           arr[i] where 0 <= i < n                             * 
+*           arr[i] where 0 <= i < n                             *
+*                                                               *
+* Constraints                                                   *
+* 1) 1 <= T <= 10                                               *
+* 2) 1 <= n <= 10^5                                             *
+* 3) 1 <= arr[i] <= 2 * 10^4                                    *
+* 4) 0 <= i < n                                                 *
 ****************************************************************/
 
 'use strict';
