@@ -16,6 +16,16 @@
 * there is an element that meets the criterion.                 *
 * If there is, return YES. Otherwise, return NO.                *
 *                                                               *
+* Function Description: Complete the balancedSums function in   *
+* the editor below.                                             *
+*                                                               *
+* Input Format                                                  *
+* 1) The first line contains T, the number of test cases.       *
+* 2) The next T pairs of lines each represent a test case.      *
+*       2a) The first line contains n, the number of elements   *
+*           in the array arr.                                   *
+*       2b) The second line contains n space-separated integers *
+*           arr[i] where 0 <= i < n                             * 
 ****************************************************************/
 
 'use strict';
@@ -43,7 +53,7 @@ function readLine() {
 
 /*
  * @param { number[] } arr
- * @return { string } flag
+ * @return { string }
 */
 
 // Complete the 'balancedSums' function below.
