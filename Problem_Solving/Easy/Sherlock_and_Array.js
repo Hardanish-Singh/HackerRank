@@ -33,14 +33,14 @@ function balancedSums( arr ) {
         var rightSum = arr.slice( 1 ).reduce( (a, b) => a + b, 0);
         var flag = "NO";
         for( let i = 0; i < arr.length; i++ ) {
-        if( i > 0 ) {
-                leftSum += arr[ i - 1 ];
-                rightSum -= arr[ i ];
-        }
-        if( leftSum === rightSum ) {
-                flag = "YES";
-                break;
-        }
+                if( i > 0 ) {
+                        leftSum += arr[ i - 1 ];
+                        rightSum -= arr[ i ];
+                }
+                if( leftSum === rightSum ) {
+                        flag = "YES";
+                        break;
+                }
         }
         return flag;
 }
