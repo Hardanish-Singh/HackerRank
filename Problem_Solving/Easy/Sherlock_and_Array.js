@@ -59,6 +59,13 @@
 *               YES                                             *
 *               YES                                             *
 *               YES                                             *
+* Explanation:                                                  *
+*       For first test case, arr[2] = 4 is between two subarray *
+*               summing to 2.                                   *
+*       For second test case, arr[0] = 2 is between two         *
+*               subarrays summing to 0                          *
+*       For third test case, arr[2] = 2 is between two          *
+*               subarrays summing to 0                          *
 *                                                               *
 ****************************************************************/
 
