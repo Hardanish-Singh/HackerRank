@@ -42,6 +42,10 @@
 * Output 1:                                                     *
 *               NO                                              *
 *               YES                                             *
+* Explanation:                                                  *
+*       For the first test case, no such index exists.          *
+*       For the second test case, arr[0] + arr[1] = arr[3],     *
+*               therefore index 2 satisfies the given condition *
 *                                                               *
 * Input 2:                                                      *
 *               3                                               *
