@@ -26,7 +26,7 @@ function readLine() {
  * @return { number }
 */
 
-//Complete the 'simpleArraySum' function below.
+// Complete the 'simpleArraySum' function below.
 
 function simpleArraySum( arr ) {
         return arr.reduce( (previousValue, currentValue) => previousValue + currentValue );
