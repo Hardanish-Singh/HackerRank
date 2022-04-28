@@ -29,7 +29,7 @@ function readLine() {
 //Complete the 'simpleArraySum' function below.
 
 function simpleArraySum( arr ) {
-        return arr.reduce( (a, b) => a + b );
+return arr.reduce( (a, b) => a + b );
 }
 
 function main() {
