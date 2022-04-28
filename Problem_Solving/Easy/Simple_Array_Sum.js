@@ -22,11 +22,11 @@ function readLine() {
 }
 
 /*
- * Complete the 'simpleArraySum' function below.
- *
- * The function is expected to return an INTEGER.
- * The function accepts INTEGER_ARRAY ar as parameter.
- */
+ * @param { number[] } arr
+ * @return { number }
+*/
+
+//Complete the 'simpleArraySum' function below.
 
 function simpleArraySum( arr ) {
         return arr.reduce( (a, b) => a + b );
