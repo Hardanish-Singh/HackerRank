@@ -4,6 +4,12 @@
 * Given an array of integers, find the sum of its elements.     *
 * For example, if the array arr = [1, 2, 3], so return 6        *
 *                                                               *
+* Function Description                                          *
+* Complete the simpleArraySum function in the editor below.     *
+* It must return the sum of the array elements as an integer.   *
+* function simpleArraySum has the following parameter(s):       *
+* arr: an array of integers                                     *
+*                                                               *
 ****************************************************************/
 
 'use strict';
