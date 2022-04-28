@@ -10,6 +10,9 @@
 * function simpleArraySum has the following parameter(s):       *
 * arr: an array of integers                                     *
 *                                                               *
+* Input Format                                                  *
+* The first line contains integer, n, denoting size of the array*
+*                                                               *
 ****************************************************************/
 
 'use strict';
