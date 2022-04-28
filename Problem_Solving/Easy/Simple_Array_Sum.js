@@ -2,6 +2,7 @@
 *               HACKERRANK SIMPLE ARRAY SUM CHALLENGE	        *
 *                                                               *
 * Given an array of integers, find the sum of its elements.     *
+* For example, if the array arr = [1, 2, 3], so return 6        *
 *                                                               *
 ****************************************************************/
 
