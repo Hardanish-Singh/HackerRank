@@ -22,6 +22,12 @@
 * Output Format                                                 *
 * Print the sum of the array's elements as a single integer.    *
 *                                                               *
+* Input 1:                                                      *
+*               6                                               *
+*               1 2 3 4 10 11                                   *
+* Output 1:                                                     *
+*               31                                              *
+*                                                               *
 ****************************************************************/
 
 'use strict';
