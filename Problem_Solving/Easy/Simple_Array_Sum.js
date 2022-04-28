@@ -11,7 +11,16 @@
 * arr: an array of integers                                     *
 *                                                               *
 * Input Format                                                  *
-* The first line contains integer, n, denoting size of the array*
+* 1) The first line contains integer, n, denoting the size of   *
+*    the array                                                  *
+* 2) The second line contains n space-separated integers        *
+*    representing the array's elements.                         *
+*                                                               *
+* Constraints                                                   *
+* 1) 0 < n, arr[i] <= 1000                                      *
+*                                                               *
+* Output Format                                                 *
+* Print the sum of the array's elements as a single integer.    *
 *                                                               *
 ****************************************************************/
 
