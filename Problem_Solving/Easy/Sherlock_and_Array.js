@@ -101,7 +101,7 @@ function readLine() {
 
 function balancedSums( arr ) {
         var leftSum = 0;
-        var rightSum = arr.slice( 1 ).reduce( (a, b) => a + b );
+        var rightSum = arr.slice( 1 ).reduce( (a, b) => a + b, 0 );
         var flag = "NO";
         for( let i = 1; i <= arr.length; i++ ) {
                 if( leftSum === rightSum ) {
