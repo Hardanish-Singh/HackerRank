@@ -23,12 +23,10 @@
 * the editor below.                                             *
 *                                                               *
 * Input Format                                                  *
-* 1) The first line contains T, the number of test cases.       *
-* 2) The next T pairs of lines each represent a test case.      *
-*       2a) The first line contains n, the number of elements   *
-*           in the array arr.                                   *
-*       2b) The second line contains n space-separated integers *
-*           arr[i] where 0 <= i < n                             *
+* 1) The first line contains, n - the size of the first array   *
+* 2) The next line contains n space-separated integers arr[i]   *
+* 3) The first line contains, m - the size of the second array  *
+* 4) The next line contains m space-separated integers brr[i]   *
 *                                                               *
 * Constraints                                                   *
 * 1) 1 <= T <= 10                                               *
