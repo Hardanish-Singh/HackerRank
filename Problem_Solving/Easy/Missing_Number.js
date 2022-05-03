@@ -75,10 +75,11 @@ function readLine() {
 
 /**
  * 
- * @param { number[] } arr 
- * @param { number[] } brr 
- * @returns { number[] } 
- */
+ * @param { number[] } arr
+ * @param { number[] } brr
+ * @returns { number[] }
+*/
+
 function missingNumbers( arr, brr ) {
         var frequencyList1 = { };
         var frequencyList2 = { };
