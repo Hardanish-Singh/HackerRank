@@ -29,10 +29,10 @@
 * 4) The next line contains m space-separated integers brr[i]   *
 *                                                               *
 * Constraints                                                   *
-* 1) 1 <= T <= 10                                               *
-* 2) 1 <= n <= 10^5                                             *
-* 3) 1 <= arr[i] <= 2 * 10^4                                    *
-* 4) 0 <= i < n                                                 *
+* 1) 1 <= n, m <= 2 * 10 ^ 5                                    *
+* 2) n <= m                                                     *
+* 3) 1 <= brr[i] <=  10 ^ 4                                     *
+* 4) max(brr) - min(brr) <= 100                                 *
 *                                                               *
 * Input 1:                                                      *
 *               2                                               *
