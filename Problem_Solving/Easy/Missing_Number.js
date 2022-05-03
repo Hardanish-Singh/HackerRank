@@ -74,7 +74,6 @@ function readLine() {
 }
 
 /**
- * 
  * @param { number[] } arr
  * @param { number[] } brr
  * @returns { number[] }
