@@ -22,15 +22,6 @@ function readLine() {
     return inputString[currentLine++];
 }
 
-/*
- * Complete the 'missingNumbers' function below.
- *
- * The function is expected to return an INTEGER_ARRAY.
- * The function accepts following parameters:
- *  1. INTEGER_ARRAY arr
- *  2. INTEGER_ARRAY brr
- */
-
 function missingNumbers(arr, brr) {
     var frequencyList1 = { };
     var frequencyList2 = { };
