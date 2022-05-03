@@ -35,38 +35,18 @@
 * 4) max(brr) - min(brr) <= 100                                 *
 *                                                               *
 * Input 1:                                                      *
-*               2                                               *
-*               3                                               *
-*               1 2 3                                           *
-*               4                                               *
-*               1 2 3 3                                         *
+*           10                                                  *
+*           203 204 205 206 207 208 203 204 205 206             *
+*           13                                                  *
+*           203 204 204 205 206 207 205 208 203 206 205 206 204 *
 * Output 1:                                                     *
-*               NO                                              *
-*               YES                                             *
+*           204 205 206                                         *
 * Explanation:                                                  *
-*       For the first test case, no such index exists.          *
-*       For the second test case, arr[0] + arr[1] = arr[3],     *
-*               therefore index 2 satisfies the given condition *
-*                                                               *
-* Input 2:                                                      *
-*               3                                               *
-*               5                                               *
-*               1 1 4 1 1                                       *
-*               4                                               *
-*               2 0 0 0                                         *
-*               4                                               *
-*               0 0 2 0                                         *
-* Output 2:                                                     *
-*               YES                                             *
-*               YES                                             *
-*               YES                                             *
-* Explanation:                                                  *
-*       For first test case, arr[2] = 4 is between two subarray *
-*               summing to 2.                                   *
-*       For second test case, arr[0] = 2 is between two         *
-*               subarrays summing to 0                          *
-*       For third test case, arr[2] = 2 is between two          *
-*               subarrays summing to 0                          *
+*           204 is present in both arrays. Its frequency in arr *
+*           is 2, while its frequency in brr is 3. Similarly,   *
+*           205 and 206 occur twice in arr, but three times in  *
+*           brr. The rest of the numbers have the same          *
+*           frequencies in both lists.                          *
 *                                                               *
 ****************************************************************/
 
@@ -93,6 +73,12 @@ function readLine() {
         return inputString[currentLine++];
 }
 
+/**
+ * 
+ * @param { number[] } arr 
+ * @param { number[] } brr 
+ * @returns { number[] } 
+ */
 function missingNumbers( arr, brr ) {
         var frequencyList1 = { };
         var frequencyList2 = { };
