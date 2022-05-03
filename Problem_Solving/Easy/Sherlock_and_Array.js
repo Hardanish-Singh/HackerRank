@@ -92,7 +92,7 @@ function readLine() {
         return inputString[currentLine++];
 }
 
-/*
+/**
  * @param { number[] } arr
  * @return { string }
 */
