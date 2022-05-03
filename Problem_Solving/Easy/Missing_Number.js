@@ -79,6 +79,8 @@ function readLine() {
  * @returns { number[] }
 */
 
+// Complete the 'missingNumbers' function below.
+
 function missingNumbers( arr, brr ) {
         var frequencyList1 = { };
         var frequencyList2 = { };
