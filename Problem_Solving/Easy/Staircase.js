@@ -1,3 +1,41 @@
+/****************************************************************
+*               HACKERRANK STAIRCASE CHALLENGE	                *
+*                                                               *
+* This is a staircase of size n = 4                             *
+*                                                               *
+*                       #                                       *
+*                      ##                                       *
+*                     ###                                       *
+*                    ####                                       *
+*                                                               *
+* Its base and height are both equal to n, It is drawn using #  *
+* symbols & spaces. The last line is not preceded by any spaces *
+* Write a program that prints a staircase of size n             *
+*                                                               *
+* Function Description: Complete the staircase function in the  *
+* editor below. staircase has the following parameter(s): int n *
+*                                                               *
+* Print                                                         *
+* Print a staircase as described above.                         *
+*                                                               *
+* Input Format                                                  *
+* 1) A single integer, n, denoting the size of the staircase.   *
+*                                                               *
+* Constraints                                                   *
+* 1) 0 <= n <= 100                                              *
+*                                                               *
+* Input 1:                                                      *
+*           6                                                   *
+* Output 1:                                                     *
+*                       #                                       *
+*                      ##                                       *
+*                     ###                                       *
+*                    ####                                       *
+*                   #####                                       *
+*                  ######                                       *  
+*                                                               *
+****************************************************************/
+
 'use strict';
 
 process.stdin.resume();
