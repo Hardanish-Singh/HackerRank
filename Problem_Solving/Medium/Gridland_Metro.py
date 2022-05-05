@@ -22,17 +22,19 @@ def gridlandMetro(n, m, k, track):
         add = 0
         for i in range( 0, len( track ) ):                
                 r, c1, c2 = track[i]
+                c1 = min(c1, c2)
+                c2 = max(c1, c2 )
 
                 if( r not in dictionary ):
-                        dictionary[r] = f'{ str( min(c1, c2) ) } - { str( max( c1, c2 ) ) } - { str( add ) }'
+                        dictionary[r] = f'{ c1 } - { c2 } - { add }'
                 else:
                         column1, column2, _ = map(int, dictionary[r].split("-") )
                         
                         # check if track range is overlapping or not
                         if( min(c1, c2) > column2 ):
-                                add = add + ( min(c1, c2) - column2  ) - 1
+                                add = add + ( c1 - column2  ) - 1
                         
-                        dictionary[r] = f'{ str( min( column1, min( c1, c2 ) ) ) } - { str( max( column2, max( c1, c2 ) ) ) } - { str( add ) }'
+                        dictionary[r] = f'{ min( column1, c1 ) } - { max( column2, c2 ) } - { add }'
         
         parsedData = []
         for key, value in dictionary.items():
