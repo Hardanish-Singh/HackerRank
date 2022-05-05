@@ -20,19 +20,19 @@ import sys
 def gridlandMetro(n, m, k, track):
         dictionary = {}
         add = 0
-        for i in range(0, len(track)):                
-                row, c1, c2 = track[i]
+        for i in range( 0, len( track ) ):                
+                r, c1, c2 = track[i]
 
-                if( row not in dictionary ):
-                        dictionary[row] = str( min(c1, c2) ) + "-" + str( max(c1, c2) ) + "-" + str( add )
+                if( r not in dictionary ):
+                        dictionary[r] = f'{ str( min(c1, c2) ) } - { str( max( c1, c2 ) ) } - { str( add ) }'
                 else:
-                        value1, value2, _ = map(int, dictionary[row].split("-") )
+                        value1, value2, _ = map(int, dictionary[r].split("-") )
                         
                         # check if track range is overlapping or not
                         if( min(c1, c2) > value2 ):
                                 add = add + ( min(c1, c2) - value2  ) - 1
                         
-                        dictionary[row] = str( min( value1, min( c1, c2 ) ) ) + "-" + str( max( value2, max( c1, c2 ) ) ) + "-" +str( add )
+                        dictionary[r] = str( min( value1, min( c1, c2 ) ) ) + "-" + str( max( value2, max( c1, c2 ) ) ) + "-" +str( add )
         
         parsedData = []
         for key, value in dictionary.items():
