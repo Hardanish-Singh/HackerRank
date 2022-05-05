@@ -38,7 +38,8 @@ def gridlandMetro(n, m, k, track):
         
         parsedData = []
         for key, value in dictionary.items():
-                parsedData.append( [ int( key ), int( value.split("-")[0] ), int( value.split("-")[1] ), int( value.split("-")[2] ) ] )
+                c1, c2, sub = map(int, value.split("-") )
+                parsedData.append( [ key, c1, c2, sub ] )
 
         sum = n * m
         for i in range(0, len(parsedData)):
