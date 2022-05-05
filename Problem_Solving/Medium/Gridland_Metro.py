@@ -26,8 +26,7 @@ def gridlandMetro(n, m, k, track):
                 if( row not in dictionary ):
                         dictionary[row] = str( min(c1, c2) ) + "-" + str( max(c1, c2) ) + "-" + str( add )
                 else:
-                        value1 = int( dictionary[row].split("-")[0] )
-                        value2 = int( dictionary[row].split("-")[1] )
+                        value1, value2, _ = map(int, dictionary[row].split("-") )
                         
                         # check if track range is overlapping or not
                         if( min(c1, c2) > value2 ):
