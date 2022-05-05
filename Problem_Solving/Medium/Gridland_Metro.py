@@ -32,7 +32,7 @@ def gridlandMetro(n, m, k, track):
                         if( min(c1, c2) > column2 ):
                                 add = add + ( min(c1, c2) - column2  ) - 1
                         
-                        dictionary[r] = f'{ str( min( value1, min( c1, c2 ) ) ) } - { str( max( value2, max( c1, c2 ) ) ) } - { str( add ) }'
+                        dictionary[r] = f'{ str( min( column1, min( c1, c2 ) ) ) } - { str( max( column2, max( c1, c2 ) ) ) } - { str( add ) }'
         
         parsedData = []
         for key, value in dictionary.items():
