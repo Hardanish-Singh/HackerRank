@@ -18,7 +18,7 @@ import sys
 #
 
 def gridlandMetro(n, m, k, track):
-        dictionary = {};
+        dictionary = {}
         add = 0
         for i in range(0, len(track)):                
                 row = track[i][0]  
