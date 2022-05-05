@@ -21,9 +21,7 @@ def gridlandMetro(n, m, k, track):
         dictionary = {}
         add = 0
         for i in range(0, len(track)):                
-                row = track[i][0]  
-                c1 = track[i][1] 
-                c2 = track[i][2]
+                row, c1, c2 = track[i]
 
                 if( row not in dictionary ):
                         dictionary[row] = str( min(c1, c2) ) + "-" + str( max(c1, c2) ) + "-" + str( add )
