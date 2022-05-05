@@ -40,9 +40,7 @@ def gridlandMetro(n, m, k, track):
 
         sum = n * m
         for i in range(0, len(parsedData)):
-                start = parsedData[i][1]
-                end = parsedData[i][2]
-                sub = parsedData[i][3]
+                _, start, end, sub = parsedData[i]
                 sum = sum - ( ( end - start - sub ) + 1 )
                 
         return sum
