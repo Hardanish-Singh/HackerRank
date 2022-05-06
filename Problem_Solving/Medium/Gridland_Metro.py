@@ -41,22 +41,13 @@ def gridlandMetro(n, m, k, track):
 
 if __name__ == '__main__':
         fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
         first_multiple_input = input().rstrip().split()
-
         n = int(first_multiple_input[0])
-
         m = int(first_multiple_input[1])
-
         k = int(first_multiple_input[2])
-
         track = []
-
         for _ in range(k):
                 track.append(list(map(int, input().rstrip().split())))
-
         result = gridlandMetro(n, m, k, track)
-
         fptr.write(str(result) + '\n')
-
         fptr.close()
