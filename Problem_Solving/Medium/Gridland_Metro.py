@@ -6,16 +6,6 @@ import random
 import re
 import sys
 
-#
-# Complete the 'gridlandMetro' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts following parameters:
-#  1. INTEGER n
-#  2. INTEGER m
-#  3. INTEGER k
-#  4. 2D_INTEGER_ARRAY track
-#
 
 def gridlandMetro(n, m, k, track):
         dictionary = {}
