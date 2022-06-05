@@ -26,6 +26,9 @@
 * 2) The second line contains n space-separated integers that   *
 *    describe arr[ n ]                                          *
 *                                                               *
+* Output Format                                                 *
+* Print the following 3 lines, each upto 6 decimals             *
+*                                                               *
 * Constraints                                                   *
 * 1) 0 < n <= 100                                               *
 * 2) -100 <= arr[ i ] <= 100                                    *
