@@ -18,6 +18,14 @@
 *                                       0.400000                *
 *                                       0.200000                *
 *                                                               *
+* Function Description: Complete the plusMinus function in the  *
+* editor below                                                  *
+*                                                               *
+* Input Format                                                  *
+* 1) The first line contains an integer, n, the size of array   *
+* 2) The second line contains n space-separated integers that   *
+*    describe arr[ n ]                                          *
+*                                                               *
 ****************************************************************/
 
 'use strict';
