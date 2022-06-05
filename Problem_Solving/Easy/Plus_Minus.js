@@ -31,13 +31,13 @@ function plusMinus( arr ) {
         var plus = 0;
         var zeros = 0;
         for( let i = 0; i < arr.length; i++ ) {
-        if( arr[i] < 0 ) {
-                minus++;
-        } else if( arr[i] > 0 ) {
-                plus++;
-        } else {
-                zeros++;
-        }
+                if( arr[i] < 0 ) {
+                        minus++;
+                } else if( arr[i] > 0 ) {
+                        plus++;
+                } else {
+                        zeros++;
+                }
         }
         console.log( plus/arr.length );
         console.log( minus/arr.length );
