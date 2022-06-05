@@ -10,6 +10,9 @@
 * cases are scaled to six decimal places, though answers with   *
 * absolute error of up to 10^-4 are acceptable.                 *
 *                                                               *
+* For Example: arr = [1, 1, 0, -1, -1], There are n = 5 elements*
+* two positive, two negative and one zero. Their ratios are     *
+* 2 / 5 = 0.400000, 2 / 5 = 0.400000, 1 / 5 = 0.200000          *
 ****************************************************************/
 
 'use strict';
