@@ -24,23 +24,24 @@ function readLine() {
  * @return { void }
 */
 
+// Complete the 'plusMinus' function below.
 
 function plusMinus( arr ) {
-    var minus = 0;
-    var plus = 0;
-    var zeros = 0;
-    for( let i = 0; i < arr.length; i++ ) {
+        var minus = 0;
+        var plus = 0;
+        var zeros = 0;
+        for( let i = 0; i < arr.length; i++ ) {
         if( arr[i] < 0 ) {
-            minus++;
+                minus++;
         } else if( arr[i] > 0 ) {
-            plus++;
+                plus++;
         } else {
-            zeros++;
+                zeros++;
         }
-    }
-    console.log( plus/arr.length );
-    console.log( minus/arr.length );
-    console.log( zeros/arr.length );
+        }
+        console.log( plus/arr.length );
+        console.log( minus/arr.length );
+        console.log( zeros/arr.length );
 }
 
 function main() {
