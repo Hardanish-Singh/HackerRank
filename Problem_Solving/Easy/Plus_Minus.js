@@ -26,6 +26,9 @@
 * 2) The second line contains n space-separated integers that   *
 *    describe arr[ n ]                                          *
 *                                                               *
+* Constraints                                                   *
+* 1) 0 < n <= 100                                               *
+* 2) -100 <= arr[ i ] <= 100                                    *
 ****************************************************************/
 
 'use strict';
