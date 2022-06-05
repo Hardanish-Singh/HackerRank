@@ -16,7 +16,7 @@ process.stdin.on('end', function() {
 });
 
 function readLine() {
-    return inputString[currentLine++];
+        return inputString[currentLine++];
 }
 
 /*
