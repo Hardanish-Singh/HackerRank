@@ -39,9 +39,9 @@ function plusMinus( arr ) {
                         zeros++;
                 }
         }
-        console.log( plus/arr.length );
-        console.log( minus/arr.length );
-        console.log( zeros/arr.length );
+        console.log( plus / arr.length );
+        console.log( minus / arr.length );
+        console.log( zeros / arr.length );
 }
 
 function main() {
