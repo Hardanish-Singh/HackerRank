@@ -13,6 +13,11 @@
 * For Example: arr = [1, 1, 0, -1, -1], There are n = 5 elements*
 * two positive, two negative and one zero. Their ratios are     *
 * 2 / 5 = 0.400000, 2 / 5 = 0.400000, 1 / 5 = 0.200000          *
+* Results are printed as follows:                               *
+*                                       0.400000                *
+*                                       0.400000                *
+*                                       0.200000                *
+*                                                               *
 ****************************************************************/
 
 'use strict';
