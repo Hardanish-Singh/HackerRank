@@ -19,11 +19,11 @@ function readLine() {
         return inputString[currentLine++];
 }
 
-/*
- * Complete the 'plusMinus' function below.
- *
- * The function accepts INTEGER_ARRAY arr as parameter.
- */
+/**
+ * @param { number[] } arr
+ * @return { void }
+*/
+
 
 function plusMinus( arr ) {
     var minus = 0;
