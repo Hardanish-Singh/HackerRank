@@ -47,6 +47,19 @@
 * Returns:                                                      *
 * 1) int: the number of cells where lampposts can be installed  *
 *                                                               *
+* Input Format                                                  *
+* The first line contains three space-separated integers n, m, k*
+* the number of rows, columns and tracks to be mapped.          *
+* Each of the next k lines contains three space-separated       *
+* integers, r, c1 and c2 the row number and the track column    *
+* start and end                                                 *
+*                                                               *
+* Contraints                                                    *
+* 1) 1 <= n, m <= 10 ^ 9                                        *
+* 2) 0 <= k <= 1000                                             *
+* 3) 1 <= r <= n                                                *
+* 4) 1 <= c1 <= c2 <= m                                         *
+*                                                               *   
 ****************************************************************/
 
 """
