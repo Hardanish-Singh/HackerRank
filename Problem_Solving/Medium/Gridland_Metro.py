@@ -44,6 +44,9 @@
 * 4) track[k][3]: each element contains 3 integers that         *
 *    represent row, column start, column end all 1-indexed      *
 *                                                               *
+* Returns:                                                      *
+* 1) int: the number of cells where lampposts can be installed  *
+*                                                               *
 ****************************************************************/
 
 """
