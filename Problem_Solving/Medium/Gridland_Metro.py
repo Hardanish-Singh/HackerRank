@@ -24,6 +24,14 @@
 * Note: A train track may overlap other train tracks within the *
 * same row.                                                     *
 *                                                               *
+* For Example: If Gridland's data is the following              *
+* (1-based indexing):                                           *
+*                       k = 3                                   *
+*                       r   c1  c2                              *
+*                       1   1   4                               *
+*                       2   2   4                               *
+*                       3   1   2                               *
+*                       4   2   3                               *
 *                                                               *
 ****************************************************************/
 
