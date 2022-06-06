@@ -7,6 +7,10 @@
 * the rows are numbered from 1 to n and the columns are numbered*
 * from 1 to m.                                                  *
 *                                                               *
+* Gridland has a network of train tracks that always run in     *
+* straight horizontal lines along a row. In other words, the    *
+* start and end points of a train track are (r, c1) & (r, c2)   *
+*                                                               *
 ****************************************************************/
 
 """
