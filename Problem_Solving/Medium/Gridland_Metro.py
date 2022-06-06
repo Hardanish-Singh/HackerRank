@@ -21,6 +21,10 @@
 * Given a map of Gridland and its k  train tracks, find and     *
 * print the number of cells where the mayor can place lampposts *
 *                                                               *
+* Note: A train track may overlap other train tracks within the *
+* same row.                                                     *
+*                                                               *
+*                                                               *
 ****************************************************************/
 
 """
