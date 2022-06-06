@@ -13,6 +13,11 @@
 * where r represents the row number, c1 represents the starting *
 * column, and c2 represents the ending column of the train track*
 *                                                               *
+* The mayor of Gridland is surveying the city to determine the  *
+* number of locations where lampposts can be placed.            *
+* A lamppost can be placed in any cell that is not occupied by  *
+* a train track.                                                *
+*                                                               *
 ****************************************************************/
 
 """
