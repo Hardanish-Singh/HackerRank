@@ -18,6 +18,9 @@
 * A lamppost can be placed in any cell that is not occupied by  *
 * a train track.                                                *
 *                                                               *
+* Given a map of Gridland and its k  train tracks, find and     *
+* print the number of cells where the mayor can place lampposts *
+*                                                               *
 ****************************************************************/
 
 """
