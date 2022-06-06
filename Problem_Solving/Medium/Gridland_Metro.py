@@ -38,6 +38,11 @@
 * Function Description: Complete the gridlandMetro function in  *
 * the editor below.                                             *
 * gridlandMetro has the following parameter(s):                 *
+* 1) int n:: the number of rows in Gridland                     *
+* 2) int m:: the number of columns in Gridland                  *
+* 3) int k:: the number of tracks                               *
+* 4) track[k][3]: each element contains 3 integers that         *
+*    represent row, column start, column end all 1-indexed      *
 *                                                               *
 ****************************************************************/
 
