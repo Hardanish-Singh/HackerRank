@@ -35,6 +35,10 @@
 * In this case, there are five open cells (red) where lampposts *
 * can be placed.                                                *
 *                                                               *
+* Function Description: Complete the gridlandMetro function in  *
+* the editor below.                                             *
+* gridlandMetro has the following parameter(s):                 *
+*                                                               *
 ****************************************************************/
 
 """
