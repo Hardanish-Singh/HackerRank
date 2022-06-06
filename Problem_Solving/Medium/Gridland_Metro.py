@@ -10,6 +10,8 @@
 * Gridland has a network of train tracks that always run in     *
 * straight horizontal lines along a row. In other words, the    *
 * start and end points of a train track are (r, c1) & (r, c2)   *
+* where r represents the row number, c1 represents the starting *
+* column, and c2 represents the ending column of the train track*
 *                                                               *
 ****************************************************************/
 
