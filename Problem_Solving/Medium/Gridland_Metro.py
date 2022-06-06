@@ -3,6 +3,9 @@
 /****************************************************************
 *               HACKERRANK GRIDLAND METRO CHALLENGE	        *
 *                                                               *
+* The city of Gridland is represented as an n * m matrix where  *
+* the rows are numbered from 1 to n and the columns are numbered*
+* from 1 to m.                                                  *
 *                                                               *
 ****************************************************************/
 
