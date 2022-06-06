@@ -32,6 +32,8 @@
 *                       2   2   4                               *
 *                       3   1   2                               *
 *                       4   2   3                               *
+* In this case, there are five open cells (red) where lampposts *
+* can be placed.                                                *
 *                                                               *
 ****************************************************************/
 
