@@ -42,16 +42,14 @@ function checkIfPatterExists( grid, row, column, pattern ) {
 }
 
 function gridSearch(G, P) {
-    for( let i = 0; i < G.length; i++ ) {
-        for( let j = 0; j < G[i].length; j++ ) {
-            if( G[i][j] === P[0][0] ) {
-                if( checkIfPatterExists( G, i, j, P ) ) {
-                    return "YES";
+        for( let i = 0; i < G.length; i++ ) {
+                for( let j = 0; j < G[i].length; j++ ) {
+                        if( G[i][j] === P[0][0] && checkIfPatterExists( G, i, j, P ) ) {
+                                return "YES";
+                        }
                 }
-            }
         }
-    }
-    return "NO";
+        return "NO";
 }
 
 function main() {
