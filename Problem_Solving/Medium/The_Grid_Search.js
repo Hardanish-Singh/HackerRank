@@ -22,6 +22,13 @@
 * YES or NO, depending on whether the pattern is found.         *
 * In this case, return YES.                                     *
 *                                                               *
+* Function Description:                                         *
+* Complete the gridSearch function in the editor below. It      *
+* should return YES if the pattern exists in the grid, or NO    *
+* otherwise. gridSearch has the following parameter(s):         *
+* 1) string G[R]: the grid to search                            *
+* 2) string P[r]: the pattern to search for                     *
+*                                                               *
 ****************************************************************/
 
 'use strict';
