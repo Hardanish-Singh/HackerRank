@@ -1,3 +1,13 @@
+/****************************************************************
+*               HACKERRANK THE GRID SEARCH CHALLENGE	        *
+*                                                               *
+* Given an array of strings of digits, try to find the          *
+* occurrence of a given pattern of digits. In the grid and      *
+* pattern arrays, each string represents a row in the grid.     *
+* For example, consider the following grid:                     *
+*                                                               *
+****************************************************************/
+
 'use strict';
 
 const fs = require('fs');
