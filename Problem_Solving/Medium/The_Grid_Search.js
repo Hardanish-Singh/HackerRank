@@ -53,41 +53,28 @@ function gridSearch(G, P) {
 }
 
 function main() {
-    const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+        const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+        const t = parseInt(readLine().trim(), 10);
+        for (let tItr = 0; tItr < t; tItr++) {
+                const firstMultipleInput = readLine().replace(/\s+$/g, '').split(' ');
+                const R = parseInt(firstMultipleInput[0], 10);
+                const C = parseInt(firstMultipleInput[1], 10);
+                let G = [];
+                for (let i = 0; i < R; i++) {
+                        const GItem = readLine();
+                        G.push(GItem);
+                }
+                const secondMultipleInput = readLine().replace(/\s+$/g, '').split(' ');
+                const r = parseInt(secondMultipleInput[0], 10);
+                const c = parseInt(secondMultipleInput[1], 10);
+                let P = [];
 
-    const t = parseInt(readLine().trim(), 10);
-
-    for (let tItr = 0; tItr < t; tItr++) {
-        const firstMultipleInput = readLine().replace(/\s+$/g, '').split(' ');
-
-        const R = parseInt(firstMultipleInput[0], 10);
-
-        const C = parseInt(firstMultipleInput[1], 10);
-
-        let G = [];
-
-        for (let i = 0; i < R; i++) {
-            const GItem = readLine();
-            G.push(GItem);
+                for (let i = 0; i < r; i++) {
+                        const PItem = readLine();
+                        P.push(PItem);
+                }
+                const result = gridSearch(G, P);
+                ws.write(result + '\n');
         }
-
-        const secondMultipleInput = readLine().replace(/\s+$/g, '').split(' ');
-
-        const r = parseInt(secondMultipleInput[0], 10);
-
-        const c = parseInt(secondMultipleInput[1], 10);
-
-        let P = [];
-
-        for (let i = 0; i < r; i++) {
-            const PItem = readLine();
-            P.push(PItem);
-        }
-
-        const result = gridSearch(G, P);
-
-        ws.write(result + '\n');
-    }
-
-    ws.end();
+        ws.end();
 }
