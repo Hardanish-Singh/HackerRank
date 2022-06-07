@@ -11,6 +11,17 @@
 *               1111111111                                      *
 *               2222222222                                      *
 *                                                               *
+* The pattern array is:                                         *
+*               876543                                          * 
+*               111111                                          *
+*               111111                                          *
+*                                                               *
+* The pattern begins at the second row and the third column of  *
+* the grid and continues in the following two rows. The pattern *
+* is said to be present in the grid. The return value should be *
+* YES or NO, depending on whether the pattern is found.         *
+* In this case, return YES.                                     *
+*                                                               *
 ****************************************************************/
 
 'use strict';
