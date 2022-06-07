@@ -9,17 +9,16 @@ let inputString = '';
 let currentLine = 0;
 
 process.stdin.on('data', function(inputStdin) {
-    inputString += inputStdin;
+        inputString += inputStdin;
 });
 
 process.stdin.on('end', function() {
-    inputString = inputString.split('\n');
-
-    main();
+        inputString = inputString.split('\n');
+        main();
 });
 
 function readLine() {
-    return inputString[currentLine++];
+        return inputString[currentLine++];
 }
 
 /*
