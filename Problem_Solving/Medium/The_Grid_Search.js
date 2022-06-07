@@ -31,14 +31,14 @@ function readLine() {
  */
 
 function checkIfPatterExists( grid, row, column, pattern ) {
-    for( let i = 0; i < pattern.length; i++ ) {
-       let str1 = grid[row].slice( column, column + pattern[0].length );
-       if( pattern[ i ] !== str1 ) {
-           return false;
-       }
-       row++;
-    }
-    return true;
+        for( let i = 0; i < pattern.length; i++ ) {
+                let sliceString = grid[row].slice( column, column + pattern[0].length );
+                if( pattern[ i ] !== sliceString ) {
+                        return false;
+                }
+                row++;
+        }
+        return true;
 }
 
 function gridSearch(G, P) {
