@@ -29,6 +29,9 @@
 * 1) string G[R]: the grid to search                            *
 * 2) string P[r]: the pattern to search for                     *
 *                                                               *
+* HackerRank Problem URL:                                       *
+* https://www.hackerrank.com/challenges/the-grid-search/problem *
+*                                                               *
 ****************************************************************/
 
 'use strict';
@@ -54,15 +57,6 @@ function readLine() {
         return inputString[currentLine++];
 }
 
-/*
- * Complete the 'gridSearch' function below.
- *
- * The function is expected to return a STRING.
- * The function accepts following parameters:
- *  1. STRING_ARRAY G
- *  2. STRING_ARRAY P
- */
-
 function checkIfPatterExists( grid, row, column, pattern ) {
         for( let i = 0; i < pattern.length; i++ ) {
                 let sliceString = grid[row].slice( column, column + pattern[0].length );
@@ -74,6 +68,13 @@ function checkIfPatterExists( grid, row, column, pattern ) {
         return true;
 }
 
+/** 
+ * @param { string[] } G 
+ * @param { string[] } P 
+ * @returns { string }
+*/
+
+// Complete the 'gridSearch' function below.
 function gridSearch(G, P) {
         for( let i = 0; i < G.length; i++ ) {
                 for( let j = 0; j < G[i].length; j++ ) {
