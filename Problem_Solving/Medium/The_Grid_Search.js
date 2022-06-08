@@ -32,7 +32,7 @@
 * HackerRank Problem URL:                                       *
 * https://www.hackerrank.com/challenges/the-grid-search/problem *
 *                                                               *
-****************************************************************/
+****************************************************************/ 
 
 'use strict';
 
