@@ -72,6 +72,9 @@
 * Output 1:                                                     *
 *             9                                                 *
 *                                                               *
+* HackerRank Problem URL:                                       *
+* https://www.hackerrank.com/challenges/gridland-metro/problem  *
+*                                                               *
 ****************************************************************/
 
 """
@@ -90,7 +93,7 @@ def gridlandMetro(n, m, k, track):
         :type n: int
         :type m: int
         :type k: int
-        :type track: [][]
+        :type track: List[List[int]]
         :rtype: int
         """
         dictionary = {}
