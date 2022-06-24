@@ -5,14 +5,14 @@
 * occurrence of a given pattern of digits. In the grid and      *
 * pattern arrays, each string represents a row in the grid.     *
 * For example, consider the following grid array:               *
-*               1234567890                                      * 
+*               1234567890                                      *
 *               0987654321                                      *
 *               1111111111                                      *
 *               1111111111                                      *
 *               2222222222                                      *
 *                                                               *
 * The pattern array is:                                         *
-*               876543                                          * 
+*               876543                                          *
 *               111111                                          *
 *               111111                                          *
 *                                                               *
