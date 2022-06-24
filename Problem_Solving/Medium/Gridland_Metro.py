@@ -86,6 +86,13 @@ import sys
 
 
 def gridlandMetro(n, m, k, track):
+        """
+        :type n: int
+        :type m: int
+        :type k: int
+        :type track: [][]
+        :rtype: int
+        """
         dictionary = {}
         add = 0
         for i in range( 0, len( track ) ):                
