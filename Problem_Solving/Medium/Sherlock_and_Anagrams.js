@@ -30,23 +30,25 @@ function readLine() {
 
 function sherlockAndAnagrams( s ) {
 
-    // let hash_table = { 
+        // SOLUTION 1
+        let hash_table = { 
+
+        };
+        let count = 0;
+        for( let i = 0; i < s.length; i++ ) {
+                for ( let j = i; j < s.length; j++ ) {
+                        let temp = s.slice(i, j+1).split("").sort().join("");
+                        if( hash_table[temp] ) {
+                                count += hash_table[temp];
+                                hash_table[temp] = hash_table[temp] + 1;
+                        } else {
+                                hash_table[ temp ] = 1;
+                        }
+                }
+        }
+        return count;
         
-    // };
-    // let count = 0;
-    // for( let i = 0; i < s.length; i++ ) {
-    //     for ( let j = i; j < s.length; j++ ) {
-    //         let temp = s.slice(i, j+1).split("").sort().join("");
-    //         if( hash_table[temp] ) {
-    //             count += hash_table[temp];
-    //             hash_table[temp] = hash_table[temp] + 1;
-    //         } else {
-    //             hash_table[ temp ] = 1;
-    //         }
-    //     } 
-    // }
-    // return count;
-    
+        // SOLUTION 2
         let hash_table = { 
 
         };
