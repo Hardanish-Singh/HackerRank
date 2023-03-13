@@ -10,27 +10,16 @@ process.stdin.setEncoding("utf-8");
 let inputString = "";
 let currentLine = 0;
 
-process.stdin.on("data", function (inputStdin) {
-        inputString += inputStdin;
-});
+process.stdin.on("data", (inputStdin) => (inputString += inputStdin));
 
-process.stdin.on("end", function () {
+process.stdin.on("end", () => {
         inputString = inputString.split("\n");
         main();
 });
 
-function readLine() {
-        return inputString[currentLine++];
-}
+const readLine = () => inputString[currentLine++];
 
-/**
- * @param { number[] } arr
- * @return { number }
- */
-
-// Complete the 'diagonalDifference' function below.
-
-function diagonalDifference(arr) {
+const diagonalDifference = (arr) => {
         let leftToRightDiagonal = 0;
         let rightToLeftDiagonal = 0;
         let row1 = 0;
@@ -44,9 +33,9 @@ function diagonalDifference(arr) {
         }
 
         return Math.abs(leftToRightDiagonal - rightToLeftDiagonal);
-}
+};
 
-function main() {
+const main = () => {
         const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
         const n = parseInt(readLine().trim(), 10);
         let arr = Array(n);
@@ -59,4 +48,4 @@ function main() {
         const result = diagonalDifference(arr);
         ws.write(result + "\n");
         ws.end();
-}
+};
