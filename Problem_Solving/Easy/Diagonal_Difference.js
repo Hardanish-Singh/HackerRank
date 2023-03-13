@@ -31,12 +31,12 @@ function readLine() {
 // Complete the 'diagonalDifference' function below.
 
 function diagonalDifference(arr) {
-        var leftToRightDiagonal = 0;
-        var rightToLeftDiagonal = 0;
-        var row1 = 0;
-        var column1 = 0;
-        var row2 = 0;
-        var column2 = arr[row2].length - 1;
+        let leftToRightDiagonal = 0;
+        let rightToLeftDiagonal = 0;
+        let row1 = 0;
+        let column1 = 0;
+        let row2 = 0;
+        let column2 = arr[row2].length - 1;
 
         while (row1 <= arr.length - 1) {
                 leftToRightDiagonal += arr[row1++][column1++];
