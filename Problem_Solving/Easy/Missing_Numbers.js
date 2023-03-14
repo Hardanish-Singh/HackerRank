@@ -23,21 +23,19 @@ const missingNumbers = (arr, brr) => {
         if (brr.length > arr.length) {
                 return missingNumbers(brr, arr);
         }
-        let frequencyList1 = {};
+        let frequencyList = {};
         let missingNumber = [];
 
         for (let i = 0; i < arr.length; i++) {
-                arr[i] in frequencyList1 ? (frequencyList1[arr[i]] += 1) : (frequencyList1[arr[i]] = 1);
+                arr[i] in frequencyList ? (frequencyList[arr[i]] += 1) : (frequencyList[arr[i]] = 1);
         }
 
         for (let i = 0; i < brr.length; i++) {
-                brr[i] in frequencyList1 ? (frequencyList1[brr[i]] -= 1) : (frequencyList1[brr[i]] = 1);
+                brr[i] in frequencyList ? (frequencyList[brr[i]] -= 1) : (frequencyList[brr[i]] = 1);
         }
 
-        for (const [key, value] of Object.entries(frequencyList1)) {
-                if (value > 0) {
-                        missingNumber.push(key);
-                }
+        for (const [key, value] of Object.entries(frequencyList)) {
+                value > 0 ? missingNumber.push(key) : null;
         }
         return missingNumber;
 };
