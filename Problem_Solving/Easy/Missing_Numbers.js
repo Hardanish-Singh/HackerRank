@@ -37,6 +37,7 @@ const missingNumbers = (arr, brr) => {
         for (const [key, value] of Object.entries(frequencyList)) {
                 value > 0 ? missingNumber.push(key) : null;
         }
+
         return missingNumber;
 };
 
