@@ -24,7 +24,6 @@ const missingNumbers = (arr, brr) => {
                 return missingNumbers(brr, arr);
         }
         let frequencyList1 = {};
-        let frequencyList2 = {};
         let missingNumber = [];
 
         for (let i = 0; i < arr.length; i++) {
