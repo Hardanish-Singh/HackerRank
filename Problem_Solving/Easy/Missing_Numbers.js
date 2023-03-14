@@ -20,31 +20,27 @@ process.stdin.on("end", () => {
 const readLine = () => inputString[currentLine++];
 
 const missingNumbers = (arr, brr) => {
+        if (brr.length > arr.length) {
+                return missingNumbers(brr, arr);
+        }
         let frequencyList1 = {};
         let frequencyList2 = {};
-        let missingNumbers = [];
+        let missingNumber = [];
 
         for (let i = 0; i < arr.length; i++) {
                 arr[i] in frequencyList1 ? (frequencyList1[arr[i]] += 1) : (frequencyList1[arr[i]] = 1);
         }
 
         for (let i = 0; i < brr.length; i++) {
-                brr[i] in frequencyList2 ? (frequencyList2[brr[i]] += 1) : (frequencyList2[brr[i]] = 1);
+                brr[i] in frequencyList1 ? (frequencyList1[brr[i]] -= 1) : (frequencyList1[brr[i]] = 1);
         }
 
-        for (const [key1, value1] of Object.entries(frequencyList2)) {
-                let isFound = false;
-                for (const [key2, value2] of Object.entries(frequencyList1)) {
-                        if (key1 === key2) {
-                                isFound = true;
-                                value1 > value2 ? missingNumbers.push(key1) : null;
-                                break;
-                        }
+        for (const [key, value] of Object.entries(frequencyList1)) {
+                if (value > 0) {
+                        missingNumber.push(key);
                 }
-                !isFound ? missingNumbers.push(key1) : null;
         }
-
-        return missingNumbers;
+        return missingNumber;
 };
 
 const main = () => {
