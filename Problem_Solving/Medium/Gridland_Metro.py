@@ -28,11 +28,9 @@ def gridlandMetro(n, m, k, track):
                         dictionary[r] = f'{ c1 } - { c2 } - { add }'
                 else:
                         column1, column2, _ = map(int, dictionary[r].split("-") )
-                        
                         # check if track range is overlapping or not
                         if( min(c1, c2) > column2 ):
                                 add = add + ( c1 - column2  ) - 1
-                        
                         dictionary[r] = f'{ min( column1, c1 ) } - { max( column2, c2 ) } - { add }'
         
         parsedData = []
