@@ -2,7 +2,6 @@
         Hackerrrank: https://www.hackerrank.com/challenges/gridland-metro
 """
 
-#!/bin/python3
 import math
 import os
 import random
