@@ -20,7 +20,6 @@ process.stdin.on("end", () => {
 const readLine = () => inputString[currentLine++];
 
 const sherlockAndAnagrams = (s) => {
-        // SOLUTION 1
         let hash_table = {};
         let count = 0;
         for (let i = 0; i < s.length; i++) {
