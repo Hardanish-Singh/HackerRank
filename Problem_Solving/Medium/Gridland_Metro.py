@@ -7,16 +7,10 @@ import os
 import random
 import re
 import sys
+from typing import List
 
 
-def gridlandMetro(n, m, k, track):
-        """
-        :type n: int
-        :type m: int
-        :type k: int
-        :type track: List[List[int]]
-        :rtype: int
-        """
+def gridlandMetro(n: int, m: int, k: int, track: List[List[int]]) -> int:
         dictionary = {}
         add = 0
         for i in range( 0, len( track ) ):                
